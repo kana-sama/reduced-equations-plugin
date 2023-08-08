@@ -1,0 +1,19 @@
+name: hspg
+language: GHC2021
+default-extensions:
+  - OverloadedRecordDot
+  - BlockArguments
+dependencies:
+  - base
+  - ghc
+  - mtl
+  - lens
+  - containers
+  - uniplate
+library:
+  source-dirs: plugin
+executables:
+  hspg-exe:
+    main: Main.hs
+    dependencies:
+      - hspg
